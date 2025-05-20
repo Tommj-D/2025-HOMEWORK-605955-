@@ -9,6 +9,7 @@ package it.uniroma3.diadia;
 
 public class Partita {
 
+	private Stanza stanza;
 	private Labirinto labirinto;
 	private Giocatore giocatore;
 	private boolean finita;
@@ -17,6 +18,7 @@ public class Partita {
 		this.finita = false;
 		this.labirinto = new Labirinto();
 		this.giocatore = new Giocatore();
+		this.stanza = new Stanza();
 	}
 
    
@@ -49,5 +51,22 @@ public class Partita {
 	 */
 	public String toString() {
 		return this.labirinto.getStanzaCorrente()+"\nCfu = "+this.giocatore.getCfu();
+	}
+
+
+	public Stanza getStanzaCorrente() {
+		// TODO Auto-generated method stub
+		return this.stanza;
+	}
+
+
+	public void setStanzaCorrente(Stanza stanza) {
+		this.stanza=stanza;
+		
+	}
+
+
+	public Object getGiocatore() {
+		return this.giocatore;
 	}
 }
