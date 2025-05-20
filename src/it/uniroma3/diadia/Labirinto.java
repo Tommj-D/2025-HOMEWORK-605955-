@@ -4,6 +4,8 @@ public class Labirinto {
 	
 	private Stanza StanzaCorrente;
 	private Stanza StanzaVincente;
+	private Stanza stanza;
+	
 
 	public Labirinto() {
 		creaStanze();
