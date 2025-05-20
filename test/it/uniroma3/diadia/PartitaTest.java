@@ -35,7 +35,7 @@ class PartitaTest {
 	
 	@Test
 	void test_setCfu() {
-		partita.setCfu(10);
-		assertEquals(10, partita.getCfu());
+		partita.getGiocatore().setCfu(10);
+		assertEquals(10, partita.getGiocatore().getCfu());
 	}
 }
